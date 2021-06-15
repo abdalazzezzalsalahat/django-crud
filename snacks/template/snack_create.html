@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block info %}
+
+<h1>Create order</h1>
+
+<form action="" method="POST">
+  {% csrf_token %}
+  {{ form.as_ul }}
+  <input type="submit" value="Order">
+</form>
+
+{% endblock info %}
